@@ -1,16 +1,11 @@
-# flutter_learn_bloc
+# Flutter_learn_bloc
 
-A new Flutter project.
+Objective
 
-## Getting Started
+- For learning State Management - BLoC
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Resource :
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BLoC : https://bloclibrary.dev/#/
+Equatable : https://pub.dev/packages/equatable
