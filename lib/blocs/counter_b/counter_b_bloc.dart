@@ -1,13 +1,19 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'counter_b_event.dart';
 part 'counter_b_state.dart';
 
 class CounterBBloc extends Bloc<CounterBEvent, CounterBState> {
-  CounterBBloc() : super(CounterBInitial()) {
-    on<CounterBEvent>((event, emit) {
-      // TODO: implement event handler
+  CounterBBloc() : super(const CounterBState(count: 0)) {
+    //Events
+    //Add
+    on<CounterBEventAdd>((event, emit) {
+      emit(state.copyWith(count: state.count + 1));
+    });
+    //Reset
+    on<CounterBEventReset>((event, emit) {
+      emit(state.copyWith(count: 0));
     });
   }
 }
